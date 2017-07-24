@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+body{
+  background-image: url('image/ardoise.jpg');
+  font-family: 'Permanent Marker', cursive;
+  width: 80%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+img{
+  width:150px;
+  height: 100px;
+}
+
+h1{
+  color: white;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  font-size: 1.7em;
+}
+
+.choix{
+  width:250px;
+  color:white;
+  /*display:inline-block;*/
+}
+
+.formulaire{
+  color: white;
+  margin-top: 8%;
+  width: 297px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.plats{
+ display:flex;
+ flex-direction: row-reverse;
+ padding: 2%;
+ width: 100%;
+  }
+
+.listePlat{
+  font-size:1.5em;
+  color:white;
+  padding:3%;
+}
+
+.list{
+  text-align:center;
+
+}
+
+input[type=text],input[type=file]{
+  background-color: rgb(75,75,75);
+  border-color: rgb(75,75,75);
+  color:white;
+  height: 39px;
+  width: 339px;}
+
+input[type=text]:focus{
+  border: 1px solid red;
+}
+
+input[type=submit]{
+  background-image: url('image/vichy.jpg');
+  margin-top: 20%;
+  width: 145px;
+  height: 48px;
+  border-radius: 15px;
+}
+
+label{
+  font-size: 2em;
+  text-align: center;
+}
+
+.logo{
+float:left;
+}
+
+.atable{
+  float:left;
+  margin-right: 85%;
+  margin-top: -3%;
+  margin-left: 3%;
+}
+
+.btnmodif{
+  color:rgb(223,34,16);
+}
