@@ -1,0 +1,15 @@
+﻿
+
+
+  
+        				
+                    RESUME
+
+
+
+
+
+
+Créer une application qui gère l'ajout, la modification et la suppression de plats et de menus.
+Elle permet aussi d'afficher tous les plats et les menus ainsi que les plats associés à ces derniers.
+
