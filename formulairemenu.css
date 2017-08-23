@@ -26,9 +26,12 @@ h2{
 }
 
 .choix{
-  width:250px;
+  width:17%;
   color:white;
-  /*display:inline-block;*/
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+
 }
 
 .formulaire{
@@ -42,15 +45,21 @@ h2{
 
 .plats{
  display:flex;
- flex-direction: row-reverse;
+ flex-flow: row wrap;
  padding: 2%;
- width: 100%;
+ width: 1200px;
   }
 
 .listePlat{
-  font-size:1.5em;
+  font-size:1.3em;
   color:white;
   padding:3%;
+  width:25%;
+}
+.formu{
+  display:flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .list{
@@ -76,9 +85,13 @@ input[type=submit]{
   height: 48px;
   border-radius: 15px;
 }
+.button{
+  width:100%;
+  text-align: center;
+}
 
-label{
-  font-size: 2em;
+.formu label{
+  font-size: 1.3em;
   text-align: center;
 }
 
@@ -95,4 +108,20 @@ float:left;
 
 .btnmodif{
   color:rgb(223,34,16);
+  display: flex;
+
+}
+@media screen and (max-width: 1024px){
+h1{
+  width:12px;
+  }
+.formu{
+  flex-wrap: wrap;
+  }
+.choix{
+  width: 100%;
+  }
+.choix img{
+  width: 80%;
+ }
 }

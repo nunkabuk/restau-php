@@ -32,7 +32,7 @@
   $idDernierMenu=$bdd->lastInsertId();
   $idDernierMenu=intval($idDernierMenu);
   ?>
-  <form method="post" action="traitementmenu.php?id=<?php echo $idDernierMenu?>">;
+  <form method="post" class="formu" action="traitementmenu.php?id=<?php echo $idDernierMenu?>">;
     <?php
     $reponse=$bdd->query('SELECT * FROM plats');
       while($donnees = $reponse->fetch())
@@ -47,9 +47,9 @@
 }
     $reponse->closeCursor();
     ?>
-
-  <INPUT TYPE="submit" NAME="bouton" VALUE="envoyer">
-
+<div class="button">
+  <input type="submit" NAME="bouton" VALUE="envoyer">
+  </div>
       </form>
     </div>
     </body>

@@ -14,6 +14,8 @@ include ('header.php');
           // On affiche chaque entrée une à une avec une boucle
           while ($donnees = $reponse->fetch())
           {
+
+if (isset($donnees['nom_menu']) && !empty($donnees['nom_menu'])) {
             ?>
             <div class="listePlat">
                 <h3> Menu <?php echo $donnees['nom_menu']; ?> <span> <?php echo $donnees['prix_menu']; ?> € </span> </h3>
@@ -24,6 +26,7 @@ include ('header.php');
             </div>
             <?php
           }
+        }
           $reponse->closeCursor();
           ?>
         </div>
